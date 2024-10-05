@@ -1,0 +1,243 @@
+body {
+  background-color: #fdd743;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+.general {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.headline {
+  width: 30rem;
+  position: relative;
+}
+
+.headline p {
+  font-size: 5rem;
+  line-height: 1.9;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.digital {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.rectangle1 {
+  width: 21rem;
+  height: 8rem;
+  background-color: #fdd743;
+  border: 2px solid black;
+  border-radius: 10rem;
+  position: absolute;
+  z-index: 1;
+  top: 11rem;
+  left: -1rem;
+}
+
+.rectangle2 {
+  width: 21rem;
+  height: 8rem;
+  background-color: #fdd743;
+  border: 2px solid black;
+  border-radius: 10rem;
+  position: absolute;
+  z-index: 0;
+  top: 11.7rem;
+  left: 0rem;
+}
+
+.text-rectangle {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.shape-decor {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.spheres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.sphere {
+  width: 10rem;
+  height: 10rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: -1rem;
+}
+
+.list {
+  width: 30rem;
+  z-index: 1;
+}
+
+.box-01,
+.box-02,
+.box-03,
+.box-04 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-box-left {
+  margin-right: 1rem;
+  flex: 0 0 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-box-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-started {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem;
+}
+
+.button-01 {
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-01:hover {
+  background-color: #333;
+}
+
+.info-box {
+  margin-top: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.rectangle3 {
+  width: 24rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.rectangle4 {
+  width: 24rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10rem;
+  position: absolute;
+  z-index: 2;
+  top: 0.7rem;
+  left: 1rem;
+}
+
+.background-img {
+  margin-top: -8rem;
+  z-index: 0;
+}
+
+.background-img img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1297px) {
+  .general {
+    margin-top: 2rem;
+  }
+
+  .get-started {
+    margin-top: 15rem;
+  }
+
+  .background-img {
+    margin-top: 10rem;
+    z-index: 0;
+  }
+
+  .list {
+    margin-top: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .headline {
+    width: 20rem;
+    position: relative;
+  }
+
+  .list {
+    width: 20rem;
+  }
+
+  .get-started {
+    margin-top: 15rem;
+  }
+
+  .info-box {
+    right: 5rem;
+  }
+
+  .rectangle3 {
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .rectangle4 {
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .text-rectangle {
+    font-size: small;
+  }
+
+  .background-img {
+    margin-top: 10rem;
+    z-index: 0;
+  }
+}
